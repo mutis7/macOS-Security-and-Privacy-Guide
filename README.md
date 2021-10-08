@@ -1467,6 +1467,12 @@ $ :>~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2
 $ sudo chflags schg ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2
 ```
 
+Alternatively, you can also disable Gatekeeper using the following command: 
+
+```sudo spctl --master-disable```
+
+(See <https://disable-gatekeeper.github.io/> and <https://objective-see.com/blog/blog_0x64.html> for reference)
+
 ## Metadata and artifacts
 
 macOS attaches metadata ([HFS+ extended attributes](https://en.wikipedia.org/wiki/Extended_file_attributes#OS_X)) to downloaded files, which can be viewed with the `mdls` and `xattr` commands:
@@ -2346,6 +2352,7 @@ drwx------  2 kevin  staff       64 Dec  4 12:27 umask_testing_dir
 * [stronghold](https://github.com/alichtman/stronghold) - Securely and easily configure your Mac from the terminal. Inspired by this guide.
 * [yelp/osxcollector](https://github.com/yelp/osxcollector) - Forensic evidence collection & analysis toolkit for OS X.
 * [The Eclectic Light Company - Downloads](https://eclecticlight.co/downloads/) - A collection of useful diagnostics and control applications and utilities for macOS.
+* [Pareto Security](https://github.com/paretoSecurity/pareto-mac/) - A MenuBar app to automatically audit your Mac for basic security hygiene.
 
 ## Additional resources
 
